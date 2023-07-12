@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="向量">
+    <meta name="description" content="向量  \[ 向量通常写做\space \vec{a} 或者 \boldsymbol{a} \hspace{30cm} \] \[ 向量也可以使用起点和终点表示\space \vec{AB} &#x3D; \boldsymbol{B} - \boldsymbol{A} \hspace{30cm} \] \[ 向量具有方向和长度 \hspace{30cm}\] \[ 向量的长度写做\space \mid\m">
 <meta property="og:type" content="article">
 <meta property="og:title" content="向量与线性代数">
 <meta property="og:url" content="http://example.com/2023/01/10/miscellaneous-math/index.html">
 <meta property="og:site_name" content="17ya&#39;s blog">
-<meta property="og:description" content="向量">
+<meta property="og:description" content="向量  \[ 向量通常写做\space \vec{a} 或者 \boldsymbol{a} \hspace{30cm} \] \[ 向量也可以使用起点和终点表示\space \vec{AB} &#x3D; \boldsymbol{B} - \boldsymbol{A} \hspace{30cm} \] \[ 向量具有方向和长度 \hspace{30cm}\] \[ 向量的长度写做\space \mid\m">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-10T07:44:33.682Z">
-<meta property="article:modified_time" content="2023-01-11T16:30:25.818Z">
+<meta property="article:modified_time" content="2023-07-12T12:37:17.912Z">
 <meta property="article:author" content="17ya">
 <meta name="twitter:card" content="summary">
     
@@ -36,7 +36,7 @@
       
     
     <!-- title -->
-    <title>向量与线性代数</title>
+    <title>Category: 计算机图形学基础</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -111,7 +111,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%91%E9%87%8F"><span class="toc-number">1.</span> <span class="toc-text">向量</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F"><span class="toc-number">1.</span> <span class="toc-text">向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E5%90%91%E9%87%8F"><span class="toc-number">2.</span> <span class="toc-text">单位向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E6%B1%82%E5%92%8C"><span class="toc-number">3.</span> <span class="toc-text">向量求和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%82%B9%E4%B9%98"><span class="toc-number">4.</span> <span class="toc-text">向量点乘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%8F%89%E4%B9%98"><span class="toc-number">5.</span> <span class="toc-text">向量叉乘</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -144,7 +144,7 @@
       
     <div class="article-category">
         <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9F%BA%E7%A1%80/">计算机图形学基础</a>
+        <a class="category-link" href="/categories/cg/">cg</a>
     </div>
 
 
@@ -155,7 +155,86 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="向量">向量</h2>
+    <div style="overflow-x:hidden">
+<h3 id="向量">向量</h3>
+<ul>
+<li><span class="math display">\[ 向量通常写做\space \vec{a} 或者
+\boldsymbol{a} \hspace{30cm} \]</span></li>
+<li><span class="math display">\[ 向量也可以使用起点和终点表示\space
+\vec{AB} = \boldsymbol{B} - \boldsymbol{A} \hspace{30cm} \]</span></li>
+<li><span class="math display">\[ 向量具有方向和长度
+\hspace{30cm}\]</span></li>
+<li><span class="math display">\[ 向量的长度写做\space
+\mid\mid\vec{a}\mid\mid \hspace{30cm} \]</span></li>
+</ul>
+<h3 id="单位向量">单位向量</h3>
+<ul>
+<li><span class="math display">\[ 模长为1的向量就是单位向量
+\hspace{30cm} \]</span></li>
+<li><span class="math display">\[ 计算公式为\space \hat{a} = \frac
+{\vec{a} } {\mid\mid\vec{a}\mid\mid} \hspace{30cm} \]</span></li>
+</ul>
+<h3 id="向量求和">向量求和</h3>
+<p><img
+src="https://img-blog.csdnimg.cn/img_convert/4dcd173bc2fdc1170e0ae119797f353f.png" /></p>
+<ul>
+<li><span class="math display">\[
+根据平行四边行法则和三角形法则可得\space \vec{c} = \vec{a} + \vec{b}
+\hspace{30cm}\]</span></li>
+<li><span class="math display">\[ 向量默认是列向量
+\hspace{30cm}\]</span></li>
+<li><span class="math display">\[ 向量的转置即行和列互换 \space
+\boldsymbol{A} = \begin{pmatrix} x \\ y \end{pmatrix} \space \space
+\boldsymbol{A}^T = \begin{pmatrix} x &amp; y \end{pmatrix} \hspace{30cm}
+\]</span></li>
+</ul>
+<h3 id="向量点乘">向量点乘</h3>
+<ul>
+<li><p><span
+class="math display">\[\text{两个向量点乘会得到一个数，也可以计算两个向量的夹角}
+\hspace{30cm}\]</span> <span class="math display">\[\vec{a} \cdot
+\vec{b}= {\mid\mid\vec{a}\mid\mid}{\mid\mid\vec{b}\mid\mid} \cos\theta
+\hspace{30cm}\]</span> <span class="math display">\[\cos\theta =
+\frac{\vec{a} \cdot \vec{b} } {\mid\mid\vec{a}\mid\mid
+\mid\mid\vec{b}\mid\mid} \hspace{30cm}\]</span></p></li>
+<li><p><span class="math display">\[\text{点乘的性质：}
+\hspace{30cm}\]</span> <span class="math display">\[\vec{a} \cdot
+\vec{b} = \vec{b} \cdot \vec{a} \hspace{30cm}\]</span> <span
+class="math display">\[\vec{a} \cdot \left( \vec{b} + \vec{c} \right) =
+\vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c} \hspace{30cm}\]</span>
+<span class="math display">\[ \left(k\vec{a} \right) \cdot \vec{b} =
+\vec{a} \cdot \left(k\vec{b} \right) = k\left(\vec{a} \cdot \vec{b}
+\right) \hspace{30cm}\]</span></p></li>
+<li><p><span class="math display">\[\text{在笛卡尔坐标系中：}
+\hspace{30cm}\]</span> <span class="math display">\[2d: \vec{a} \cdot
+\vec{b} = \begin{pmatrix} x \\ y \end{pmatrix} \cdot \begin{pmatrix} x
+\\ y \end{pmatrix} = x_a + x_b + y_a + y_b  \hspace{30cm}\]</span> <span
+class="math display">\[3d: \vec{a} \cdot \vec{b} = \begin{pmatrix} x \\
+y \\ z \end{pmatrix} \cdot \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+x_a + x_b + y_a + y_b + z_a + z_b  \hspace{30cm}\]</span></p></li>
+<li><p><span class="math display">\[\text{点乘的作用：}
+\hspace{30cm}\]</span> <a
+href="#向量点乘">1.找到两个向量之间的余弦夹角</a> <span
+class="math display">\[\text{2.一个向量投影到另一个向量上的长度}
+\hspace{30cm}\]</span> <img
+src="https://img-blog.csdnimg.cn/img_convert/1c322f4d029573752e7f90f9c2565d5a.png" />
+<img
+src="https://img-blog.csdnimg.cn/img_convert/258841074cadcda274127d12c7f6aff9.png" />
+<span class="math display">\[\vec{b}_\bot = k\vec{a}
+\hspace{30cm}\]</span> <span class="math display">\[k =
+\mid\mid\vec{b}_\bot\mid\mid = \mid\mid\vec{b}\mid\mid\cos\theta
+\hspace{30cm}\]</span></p></li>
+</ul>
+<p><span class="math display">\[\text{3.判断两个向量的前后或者距离}
+\hspace{30cm}\]</span> <img
+src="https://img-blog.csdnimg.cn/img_convert/29003635d4185a652c45c133ae395e41.png" /></p>
+<p><span
+class="math display">\[\text{方向性：点乘为正方向比较一致反之方向差不多相反}
+\hspace{30cm}\]</span> <span
+class="math display">\[\text{距离性：1为重合，由1到0，再由0到-1，可以用于镜面反射，从出射光方向看过去会非常亮，入射光则不然，金属高光同理}
+\hspace{30cm}\]</span></p>
+<h3 id="向量叉乘">向量叉乘</h3>
+</div>
 
   </div>
 </article>
@@ -181,7 +260,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%91%E9%87%8F"><span class="toc-number">1.</span> <span class="toc-text">向量</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F"><span class="toc-number">1.</span> <span class="toc-text">向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E5%90%91%E9%87%8F"><span class="toc-number">2.</span> <span class="toc-text">单位向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E6%B1%82%E5%92%8C"><span class="toc-number">3.</span> <span class="toc-text">向量求和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%82%B9%E4%B9%98"><span class="toc-number">4.</span> <span class="toc-text">向量点乘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%8F%89%E4%B9%98"><span class="toc-number">5.</span> <span class="toc-text">向量叉乘</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
